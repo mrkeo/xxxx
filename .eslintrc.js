@@ -16,5 +16,6 @@ module.exports = {
     "linebreak-style": 0,
     quotes: ["error", "double"],
     "react/prefer-stateless-function": 0,
+    "class-methods-use-this": 0,
   },
 };
