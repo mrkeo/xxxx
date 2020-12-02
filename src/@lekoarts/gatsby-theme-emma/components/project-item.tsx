@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { animated } from "react-spring"
 import { ChildImageSharp } from "../types"
+import Moment from 'react-moment';
 
 type ProjectItemProps = {
   node: {
@@ -13,6 +14,8 @@ type ProjectItemProps = {
     service: string
     client: string
     cover: ChildImageSharp
+    date: Date
+    language: string
   }
   style: any
 }
@@ -101,8 +104,10 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
             zIndex: -2,
           }}
         />
-        <div sx={{ fontSize: 5, fontWeight: `bold` }}>{node.client}</div>
+        <div sx={{ fontSize: 4 }}>{node.language}</div>
+        <div sx={{ fontSize: 3, fontWeight: `bold` }}>{node.title}</div>
         <div sx={{ fontSize: 2 }}>{node.service}</div>
+        <div sx={{ fontSize: 1 }}><Moment date={node.date} format="DD.MM.YYYY"/></div>
       </Link>
     </div>
   </animated.div>
