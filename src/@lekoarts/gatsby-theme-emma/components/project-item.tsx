@@ -1,24 +1,26 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
-import { animated } from "react-spring"
-import { ChildImageSharp } from "../types"
-import Moment from 'react-moment';
+import { jsx } from "theme-ui";
+import Img from "gatsby-image";
+import { Link } from "gatsby";
+import { animated } from "react-spring";
+import { ChildImageSharp } from "../types";
+import Moment from "react-moment";
+import "../../../styles/global.css";
 
 type ProjectItemProps = {
   node: {
-    color: string
-    title: string
-    slug: string
-    service: string
-    client: string
-    cover: ChildImageSharp
-    date: Date
-    language: string
-  }
-  style: any
-}
+    color: string;
+    title: string;
+    slug: string;
+    service: string;
+    client: string;
+    cover: ChildImageSharp;
+    date: Date;
+    language: string;
+    labels: string;
+  };
+  style: any;
+};
 
 const ProjectItem = ({ node, style }: ProjectItemProps) => (
   <animated.div
@@ -104,13 +106,22 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
             zIndex: -2,
           }}
         />
-        <div sx={{ fontSize: 4 }}>{node.language}</div>
+        <div sx={{ fontSize: 4 }}>
+          <span
+            className="iconify language-icon"
+            data-icon={node.language}
+            data-inline="false"
+          ></span>
+        </div>
         <div sx={{ fontSize: 3, fontWeight: `bold` }}>{node.title}</div>
         <div sx={{ fontSize: 2 }}>{node.service}</div>
-        <div sx={{ fontSize: 1 }}><Moment date={node.date} format="DD.MM.YYYY"/></div>
+        <div sx={{ fontSize: 1 }}>
+          {node.labels} <br />
+          <Moment date={node.date} format="DD.MM.YYYY" />
+        </div>
       </Link>
     </div>
   </animated.div>
-)
+);
 
-export default ProjectItem
+export default ProjectItem;
