@@ -8,9 +8,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    siteTitle: "Pawel",
-    siteTitleAlt: "Pawel Idzikowski",
-    siteHeadline: "Pawel Idzikowski - Portfolio",
+    siteTitle: "pawel",
+    siteTitleAlt: "pawel idzikowski",
+    siteHeadline: "pawel idzikowski - Portfolio",
     siteDescription:
       "Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images from LekoArts used by github.com/trolit",
     siteLanguage: "en",
@@ -21,6 +21,12 @@ module.exports = {
       resolve: "@lekoarts/gatsby-theme-emma",
       // See the theme's README for all available options
       options: {},
+    },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "content/utils/typography.js",
+      },
     },
     {
       resolve: "gatsby-plugin-prettier-eslint",
