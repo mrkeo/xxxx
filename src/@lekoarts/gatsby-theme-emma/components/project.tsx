@@ -20,6 +20,7 @@ type ProjectProps = {
       slug: string
       title: string
       cover: ChildImageSharp
+      labels: string
     }
   }
   [key: string]: any

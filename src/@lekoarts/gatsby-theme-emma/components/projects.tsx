@@ -13,6 +13,9 @@ type ProjectsProps = {
     service: string
     client: string
     cover: ChildImageSharp
+    date: Date
+    language: string
+    labels: string
   }[]
   [key: string]: any
 }
