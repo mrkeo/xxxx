@@ -16,7 +16,7 @@ const ProjectInfo = ({ project }: ProjectInfoProps) => (
     <Item name="Client" content={project.client} />
     <Item name="Date" content={project.date} />
     <Item name="Service" content={project.service} />
-    {project.labels !== "" ? <Item name="Labels" content={project.labels} /> : null}
+    {project.labels !== null ? <Item name="Labels" content={project.labels} /> : null}
   </Flex>
 )
 
