@@ -19,8 +19,10 @@ module.exports = {
   plugins: [
     {
       resolve: "@lekoarts/gatsby-theme-emma",
-      // See the theme's README for all available options
       options: {},
+    },
+    {
+      resolve: "@pauliescanlon/gatsby-mdx-embed",
     },
     {
       resolve: "gatsby-plugin-typography",
@@ -30,7 +32,6 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-prettier-eslint",
-      // this is the default configuration, override only what you need
       options: {
         cwd: process.cwd(), // path to a directory that should be considered as the current working directory
         watch: true, // format/lint on save
