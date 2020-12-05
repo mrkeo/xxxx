@@ -14,14 +14,21 @@ type HeaderProps = {
   }[]
 }
 
+function tryToLoadColorModeFromSessionStorage() {
+  const mode = localStorage.getItem('theme-ui-color-mode');
+  if (mode !== null) {
+    document.body.setAttribute("data-theme", `${mode === 'light' ? 'dark' : 'light'}`);
+  }
+}
+
 const Header = ({ meta, nav }: HeaderProps) => {
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`)
-    document.body.setAttribute("data-theme", `${isDark ? 'light' : 'dark'}`);
   }
-
+  
+  tryToLoadColorModeFromSessionStorage();
   const navEmpty = nav.length === 0
 
   return (
