@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import "../../src/styles/global.css";
+import "../../src/styles/global.scss";
 
 class GitHubButton extends Component {
   openUrl(url) {
