@@ -25,6 +25,9 @@ module.exports = {
       resolve: "@pauliescanlon/gatsby-mdx-embed",
     },
     {
+      resolve: "gatsby-plugin-sass",
+    },
+    {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: "content/utils/typography.js",

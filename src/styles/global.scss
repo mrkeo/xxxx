@@ -3,6 +3,14 @@
     width: 30% !important;
 }
 
+.corner-language-icon {
+    height: 20% !important;
+    width: 20% !important;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+}
+
 .star-icon {
     height: 20% !important;
     width: 20% !important;
@@ -49,6 +57,9 @@
 
 .img-small {
     width: 40%;
+}
+
+.fl {
     float: left;
 }
 
@@ -62,4 +73,11 @@
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
+}
+
+body[data-theme='dark'] {
+    .MuiPaper-root {
+        background-color: #3A425D !important;
+        color: white;
+    }
 }
