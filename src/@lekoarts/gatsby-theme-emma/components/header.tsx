@@ -19,6 +19,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
   const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`)
+    document.body.setAttribute("data-theme", `${isDark ? 'light' : 'dark'}`);
   }
 
   const navEmpty = nav.length === 0
