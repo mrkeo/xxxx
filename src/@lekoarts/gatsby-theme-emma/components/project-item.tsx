@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 import { animated } from "react-spring";
 import { ChildImageSharp } from "../types";
 import Moment from "react-moment";
-import "../../../styles/global.css";
 
 type ProjectItemProps = {
   node: {
@@ -75,6 +74,11 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
           },
         }}
       >
+        <span
+          className="iconify corner-language-icon"
+          data-icon={node.language}
+          data-inline="false"
+        ></span>
         <Img fluid={node.cover.childImageSharp.fluid} />
       </div>
       <Link to={node.slug} aria-label={`View detail page of ${node.title}`}>
