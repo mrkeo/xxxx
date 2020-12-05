@@ -8,9 +8,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    siteTitle: "pawel",
+    siteTitle: "Pawel Idzikowski",
     siteTitleAlt: "pawel idzikowski",
-    siteHeadline: "pawel idzikowski - Portfolio",
+    siteHeadline: "Pawel Idzikowski",
     siteDescription:
       "Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images from LekoArts used by github.com/trolit",
     siteLanguage: "en",
@@ -36,12 +36,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-prettier-eslint",
       options: {
-        cwd: process.cwd(), // path to a directory that should be considered as the current working directory
-        watch: true, // format/lint on save
-        initialScan: true, // if true, will format/lint the whole project on Gatsby startup
-        onChangeFullScanLint: false, // if true, on file save always perform full scan lint
-        onChangeFullScanFormat: false, // if true, on file save always perform full scan format
-        prettierLast: false, // if true, will run Prettier after ESLint
+        cwd: process.cwd(),
+        watch: true,
+        initialScan: true,
+        onChangeFullScanLint: false,
+        onChangeFullScanFormat: false,
+        prettierLast: false,
         ignorePatterns: [
           "**/node_modules/**/*",
           "**/.git/**/*",
@@ -60,8 +60,8 @@ module.exports = {
         eslint: {
           formatter: "stylish", // set custom or third party formatter
           emitWarning: true, // if true, will emit lint warnings
-          failOnError: false, // if true, any lint error will fail the build, you may set true only in your prod config
-          failOnWarning: false, // same as failOnError but for warnings
+          failOnError: false,
+          failOnWarning: false,
         },
       },
     },
