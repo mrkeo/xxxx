@@ -74,12 +74,20 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
           },
         }}
       >
-        <span
-          className="iconify corner-language-icon"
-          data-icon={node.language}
-          data-inline="false"
-        ></span>
-        <Img fluid={node.cover.childImageSharp.fluid} />
+        {node.language.includes("logo") ? (
+          <span
+            className="iconify corner-language-icon2"
+            data-icon={node.language}
+            data-inline="false"
+          ></span>
+        ) : (
+          <span
+            className="iconify corner-language-icon"
+            data-icon={node.language}
+            data-inline="false"
+          ></span>
+        )}
+        <Img className="gray" fluid={node.cover.childImageSharp.fluid}/>
       </div>
       <Link to={node.slug} aria-label={`View detail page of ${node.title}`}>
         <img

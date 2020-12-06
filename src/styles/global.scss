@@ -3,12 +3,28 @@
     width: 30% !important;
 }
 
-.corner-language-icon {
-    height: 20% !important;
-    width: 20% !important;
+.base-corner-language-icon {
     position: absolute;
     z-index: 5;
     right: 0;
+}
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.corner-language-icon {
+    @extend .base-corner-language-icon;
+    height: 15% !important;
+    width: 15% !important;
+}
+
+.corner-language-icon2 {
+    @extend .base-corner-language-icon;
+    height: 10% !important;
+    width: 10% !important;
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 .star-icon {
