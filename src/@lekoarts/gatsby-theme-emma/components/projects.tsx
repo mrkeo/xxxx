@@ -64,8 +64,9 @@ const Projects = ({ projects }: ProjectsProps) => {
     <Layout
       sx={{
         display: `grid`,
+        marginLeft: `3%`,
         gridTemplateColumns: `repeat(auto-fit, minmax(280px, 1fr))`,
-        width: `100%`,
+        width: `94%`,
       }}
     >
       {trail.map((style, index) => (
