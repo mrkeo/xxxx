@@ -27,6 +27,11 @@
     margin-right: 2%;
 }
 
+.basic-icon {
+    height: 20% !important;
+    width: 20% !important;
+}
+
 .star-icon {
     height: 20% !important;
     width: 20% !important;
@@ -53,6 +58,10 @@
     margin: 6%;
 }
 
+.ml-1 {
+    margin-left: 1%;
+}
+
 .mt-10 {
     margin-top: 10% !important;
 }
@@ -77,6 +86,17 @@
 
 .img-small {
     width: 40%;
+}
+
+.center-horizontally {
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+
+.center-vertically {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fl {
