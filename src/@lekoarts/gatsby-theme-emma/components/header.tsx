@@ -17,7 +17,7 @@ type HeaderProps = {
 function tryToLoadColorModeFromSessionStorage() {
   const mode = localStorage.getItem('theme-ui-color-mode');
   if (mode !== null) {
-    document.body.setAttribute("data-theme", `${mode === 'light' ? 'dark' : 'light'}`);
+    document.body.setAttribute("data-theme", `${mode}`);
   }
 }
 
