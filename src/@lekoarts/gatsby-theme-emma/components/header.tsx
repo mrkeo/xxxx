@@ -1,35 +1,36 @@
 /** @jsx jsx */
-import { Flex, jsx, useColorMode, Link as TLink } from "theme-ui"
-import { Link } from "gatsby"
-import Navigation from "./navigation"
-import SocialLinks from "./social-links"
+import { Flex, jsx, useColorMode, Link as TLink } from "theme-ui";
+import { Link } from "gatsby";
+import Navigation from "./navigation";
+import SocialLinks from "./social-links";
+import { Tooltip } from "@material-ui/core";
 
 type HeaderProps = {
   meta: {
-    [key: string]: string
-  }
+    [key: string]: string;
+  };
   nav: {
-    title: string
-    slug: string
-  }[]
-}
+    title: string;
+    slug: string;
+  }[];
+};
 
 function tryToLoadColorModeFromSessionStorage() {
-  const mode = localStorage.getItem('theme-ui-color-mode');
+  const mode = localStorage.getItem("theme-ui-color-mode");
   if (mode !== null) {
     document.body.setAttribute("data-theme", `${mode}`);
   }
 }
 
 const Header = ({ meta, nav }: HeaderProps) => {
-  const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  const [colorMode, setColorMode] = useColorMode();
+  const isDark = colorMode === `dark`;
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `light` : `dark`)
-  }
-  
+    setColorMode(isDark ? `light` : `dark`);
+  };
+
   tryToLoadColorModeFromSessionStorage();
-  const navEmpty = nav.length === 0
+  const navEmpty = nav.length === 0;
 
   return (
     <Flex as="header" variant="layout.header">
@@ -43,15 +44,40 @@ const Header = ({ meta, nav }: HeaderProps) => {
           order: [1, 2],
         }}
       >
-        <div>
-          <TLink
-            aria-label={`${meta.siteTitle}, Back to homepage`}
-            as={Link}
-            sx={{ color: `text`, ":hover": { color: `primary`, textDecoration: `none` } }}
-            to="/"
+        <img height="80" src="avatar.png" />
+        <div className="text-left ml-2 mt-1">
+          <Tooltip
+            title={
+              <div className="text-center fs-140">
+                <span
+                  className="iconify home-icon mb-5"
+                  data-icon="ant-design:home-twotone"
+                  data-inline="false"
+                ></span>{" "}
+                <br /> &lt; to home page /&gt;
+              </div>
+            }
+            arrow
           >
-            {meta.siteTitle}
-          </TLink>
+            <TLink
+              aria-label={`${meta.siteTitle}, Back to homepage`}
+              as={Link}
+              sx={{
+                color: `text`,
+                ":hover": { color: `primary`, textDecoration: `none` },
+              }}
+              to="/"
+            >
+              <p>
+                <span className="display-block">
+                  {meta.siteTitle.toLowerCase()}
+                </span>
+                <span className="font-montserrat ls-1 fs-60 display-block">
+                  software developer
+                </span>
+              </p>
+            </TLink>
+          </Tooltip>
         </div>
       </Flex>
       <div
@@ -85,7 +111,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
         </button>
       </div>
     </Flex>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

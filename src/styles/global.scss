@@ -1,45 +1,24 @@
-.language-icon {
-    height: 30% !important;
-    width: 30% !important;
-}
-
-.base-corner-language-icon {
-    position: absolute;
-    z-index: 5;
-    right: 0;
-}
+@import "icons.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Special+Elite&display=swap');
 
 .gray {
     filter: grayscale(100%);
 }
 
-.corner-language-icon {
-    @extend .base-corner-language-icon;
-    height: 15% !important;
-    width: 15% !important;
+.font-montserrat {
+    font-family: 'Montserrat Alternates', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.corner-language-icon2 {
-    @extend .base-corner-language-icon;
-    height: 10% !important;
-    width: 10% !important;
-    margin-top: 2%;
-    margin-right: 2%;
+.fs-60 {
+    font-size: 60%;
 }
 
-.basic-icon {
-    height: 20% !important;
-    width: 20% !important;
+.fs-140 {
+    font-size: 140%;
 }
 
-.star-icon {
-    height: 20% !important;
-    width: 20% !important;
-}
-
-.arrow-icon {
-    height: 10% !important;
-    width: 10% !important;
+.ls-1 {
+    letter-spacing: 1px;
 }
 
 .w-100 {
@@ -62,8 +41,16 @@
     margin-left: 1%;
 }
 
+.ml-2 {
+    margin-left: 2%;
+}
+
 .mt-10 {
     margin-top: 10% !important;
+}
+
+.mb-5 {
+    margin-bottom: 5%;
 }
 
 .mt-1 {
@@ -82,6 +69,14 @@
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.display-block {
+    display: block;
 }
 
 .img-small {
