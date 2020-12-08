@@ -60,6 +60,15 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
         },
       }}
     >
+      <span className="project-date font-josefinSans">
+        <span
+          className="iconify"
+          data-icon="ic:round-timer"
+          data-inline="true"
+        ></span>
+        &nbsp;
+        <Moment date={node.date} format="DD.MM.YYYY" />
+      </span>
       <div
         sx={{
           "> div": {
@@ -87,7 +96,7 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
             data-inline="false"
           ></span>
         )}
-        <Img className="gray" fluid={node.cover.childImageSharp.fluid}/>
+        <Img className="gray" fluid={node.cover.childImageSharp.fluid} />
       </div>
       <Link to={node.slug} aria-label={`View detail page of ${node.title}`}>
         <img

@@ -1,5 +1,6 @@
 @import "icons.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .gray {
     filter: grayscale(100%);
@@ -7,6 +8,22 @@
 
 .font-montserrat {
     font-family: 'Montserrat Alternates', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-josefinSans {
+    font-family: 'Josefin Sans', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-date {
+    font-size: 105%;
+    width: 100%;
+    color: white;
+    background-color: #5c544d;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    bottom: 0;
 }
 
 .fs-60 {
