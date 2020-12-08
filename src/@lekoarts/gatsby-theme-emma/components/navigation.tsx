@@ -30,11 +30,12 @@ const Navigation = ({ nav }: NavigationProps) => (
         sx={{
           color: `text`,
           ":hover": { color: `primary`, textDecoration: `none` },
+          fontSize: '110%',
         }}
         key={n.slug}
         to={n.slug}
       >
-        {n.title}
+        <span className="iconify" data-icon="ls:braceleft" data-inline="true"></span> {n.title} <span className="iconify" data-icon="ls:braceright" data-inline="true"></span>
       </TLink>
     ))}
   </Flex>
