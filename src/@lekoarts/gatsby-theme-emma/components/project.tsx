@@ -28,9 +28,9 @@ type ProjectProps = {
 
 const Project = ({ data: { project } }: ProjectProps) => {
   const titleProps = useSpring({
-    config: config.slow,
+    config: config.gentle,
     from: { opacity: 0, transform: `translate3d(0, -30px, 0)` },
-    to: { opacity: 1, transform: `translate3d(0, 0, 0)` },
+    to: { opacity: 0.9, transform: `translate3d(0, 0, 0)` },
   })
   const infoProps = useSpring({ config: config.slow, delay: 500, from: { opacity: 0 }, to: { opacity: 1 } })
   const contentProps = useSpring({ config: config.slow, delay: 1000, from: { opacity: 0 }, to: { opacity: 1 } })

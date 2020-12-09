@@ -10,7 +10,7 @@ export default merge(tailwind, {
     modes: {
       dark: {
         text: tailwind.colors.white,
-        primary: tailwind.colors.indigo[4],
+        primary: tailwind.colors.indigo[3],
         background: tailwind.colors.gray[8],
         textMuted: tailwind.colors.gray[5],
       },
