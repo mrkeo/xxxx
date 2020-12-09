@@ -55,7 +55,17 @@ const Footer = () => (
         a: { color: `text` },
       }}
     >
-      <div sx={{ mx: 1 }}>modified by</div>
+      {` `}
+      <Link
+        aria-label="Link to the modified theme GitHub repository"
+        sx={{ ml: 2 }}
+        target="_blank"
+        href="https://github.com/trolit/trolit.github.io#readme"
+      >
+        modified
+      </Link>
+      {` `}
+      <div sx={{ mx: 1 }}>by</div>
       {` `}
       <Link
         sx={{ mr: 2 }}
