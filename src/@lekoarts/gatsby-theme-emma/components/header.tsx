@@ -48,7 +48,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
         <div className="text-left ml-2 mt-1">
           <Tooltip
             title={
-              <div className="text-center fs-140">
+              <div className="text-center fs-160 font-josefinSans">
                 <span
                   className="iconify home-icon mb-5"
                   data-icon="ant-design:home-twotone"
