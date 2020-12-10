@@ -128,12 +128,27 @@
     float: left;
 }
 
+#endomondo_preview2 {
+    width: 60%;
+    margin-left: 20%;
+}
+
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
 }
 
 @media only screen and (max-width: 767px) {
     /* phones */
+
+    #endomondo_preview2 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .pageIcon {
+        display: none !important;
+    }
+    
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {

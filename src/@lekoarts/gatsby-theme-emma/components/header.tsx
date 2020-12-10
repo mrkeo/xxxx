@@ -12,6 +12,7 @@ type HeaderProps = {
   nav: {
     title: string;
     slug: string;
+    icon: string;
   }[];
 };
 
@@ -31,7 +32,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
 
   tryToLoadColorModeFromSessionStorage();
   const navEmpty = nav.length === 0;
-
+  
   return (
     <Flex as="header" variant="layout.header">
       {!navEmpty && <Navigation nav={nav} />}

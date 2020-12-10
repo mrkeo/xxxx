@@ -16,6 +16,7 @@ const useNavigation = () => {
         nodes {
           title
           slug
+          icon
         }
       }
     }
