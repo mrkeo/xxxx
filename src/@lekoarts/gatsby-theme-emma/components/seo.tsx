@@ -52,7 +52,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
       <link rel="icon" type="image/png" sizes="32x32" href={withPrefix(`/favicon-32x32.png`)} />
       <link rel="icon" type="image/png" sizes="16x16" href={withPrefix(`/favicon-16x16.png`)} />
       <link rel="apple-touch-icon" sizes="180x180" href={withPrefix(`/apple-touch-icon.png`)} />
-      <link rel="stylesheet" href="../../../styles/global.scss" />
+      <link type="text/css" href="../../../styles/global.scss" />
       <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
       {children}
     </Helmet>
