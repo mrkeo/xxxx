@@ -5,12 +5,12 @@ export default merge(tailwind, {
   initialColorModeName: `light`,
   useCustomProperties: true,
   colors: {
-    primary: tailwind.colors.indigo[6],
+    primary: tailwind.colors.red[7],
     secondary: tailwind.colors.indigo[5],
     modes: {
       dark: {
         text: tailwind.colors.white,
-        primary: tailwind.colors.indigo[3],
+        primary: tailwind.colors.red[4],
         background: tailwind.colors.gray[8],
         textMuted: tailwind.colors.gray[5],
       },

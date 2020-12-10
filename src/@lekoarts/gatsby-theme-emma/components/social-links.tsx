@@ -68,7 +68,7 @@ const SocialLinks = () => (
     <Tooltip
       title={
         <div className="link-tooltip">
-          Discord: <span style={{ color: "#ffce00" }}>trol_IT#8002</span>
+          Discord: <span style={{ color: "#EB724B" }}>trol_IT#8002</span>
         </div>
       }
       arrow
