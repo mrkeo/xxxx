@@ -24,7 +24,7 @@ class GitHubButton extends Component {
           size="large"
           startIcon={<GitHubIcon />}
         >
-          Check more at GitHub
+          Check at GitHub
         </Button>
       </div>
     );
