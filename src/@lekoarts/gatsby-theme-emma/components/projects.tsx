@@ -65,7 +65,7 @@ const Projects = ({ projects }: ProjectsProps) => {
       sx={{
         display: `grid`,
         marginLeft: `3%`,
-        gridTemplateColumns: `repeat(auto-fit, minmax(250px, 1fr))`,
+        gridTemplateColumns: `repeat(auto-fit, minmax(220px, 1fr))`,
         width: `94%`,
       }}
     >
