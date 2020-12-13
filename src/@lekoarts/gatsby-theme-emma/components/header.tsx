@@ -40,7 +40,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
         sx={{
           fontWeight: `bold`,
           fontSize: 4,
-          flex: navEmpty ? 1 : [`1 0 100%`, 1],
+          flex: navEmpty ? 1 : [`1 0 100%`, 3],
           justifyContent: navEmpty ? `flex-start` : `center`,
           order: [1, 2],
         }}
@@ -97,7 +97,6 @@ const Header = ({ meta, nav }: HeaderProps) => {
           },
           justifyContent: `flex-end`,
           flex: 1,
-          flexFlow: 'row wrap',
           display: `flex`,
           order: 3,
         }}
