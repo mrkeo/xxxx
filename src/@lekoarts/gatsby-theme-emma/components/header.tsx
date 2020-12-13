@@ -97,6 +97,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
           },
           justifyContent: `flex-end`,
           flex: 1,
+          flexFlow: 'row wrap',
           display: `flex`,
           order: 3,
         }}
