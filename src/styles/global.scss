@@ -133,12 +133,15 @@
     margin-left: 20%;
 }
 
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+.project-item-mobile-preview {
+    display: none;
 }
 
-@media only screen and (max-width: 767px) {
-    /* phones */
+.project-item-desktop-preview {
+    display: block;
+}
+
+@media only screen and (max-width: 468px) {
 
     #endomondo_preview2 {
         width: 100% !important;
@@ -149,15 +152,82 @@
         display: none !important;
     }
     
+    .language-icon {
+        height: 50% !important;
+        width: 50% !important;
+    }
+
+    .project-item-title {
+        font-size: 1.5rem !important;
+    }
+
+    .project-item-service {
+        font-size: 1.3rem !important;
+    }
+
+    .project-item-other {
+        font-size: 1rem !important;
+    }
+    
+    .project-item-mobile-preview {
+        display: block;
+    }
+
+    .project-item-desktop-preview {
+        display: none;
+    }
+
+    .corner-language-icon,
+    .corner-language-icon2 {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+@media only screen and (min-width: 469px) and (max-width: 768px) { 
+    #endomondo_preview2 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .pageIcon {
+        display: none !important;
+    }
+    
+    .language-icon {
+        height: 4rem !important;
+        width: 4rem !important;
+        margin-top: 1rem;
+    }
+
+    .project-item-title {
+        font-size: 1.3rem !important;
+    }
+
+    .project-item-service {
+        font-size: 0.9rem !important;
+    }
+
+    .project-item-mobile-preview {
+        display: block;
+    }
+
+    .project-item-desktop-preview {
+        display: none;
+    }
+
+    .corner-language-icon,
+    .corner-language-icon2 {
+        display: none;
+    }
 }
 
 body[data-theme='dark'] {
     .MuiPaper-root {
         background-color: #3A425D !important;
         color: white;
+    }
+
+    .dark-theme-img {
+        filter: brightness(20%);
     }
 }

@@ -83,20 +83,55 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
           },
         }}
       >
-        {node.language.includes("logo") ? (
-          <span
-            className="iconify corner-language-icon2"
-            data-icon={node.language}
-            data-inline="false"
-          ></span>
-        ) : (
-          <span
-            className="iconify corner-language-icon"
-            data-icon={node.language}
-            data-inline="false"
-          ></span>
-        )}
+        <span
+          className="iconify corner-language-icon"
+          data-icon={node.language}
+          data-inline="false"
+        ></span>
         <Img className="gray" fluid={node.cover.childImageSharp.fluid} />
+      </div>
+      <div className="project-item-mobile-preview">
+        <div
+          sx={{
+            backgroundColor: node.color,
+            height: `100%`,
+            left: 0,
+            position: `absolute`,
+            top: 0,
+            width: `100%`,
+            opacity: 0.5,
+            zIndex: 2,
+          }}
+        />
+        <div
+          sx={{
+            zIndex: 3,
+            position: "absolute",
+            color: "white",
+            marginLeft: "5%",
+          }}
+        >
+          <div sx={{ fontSize: 4 }}>
+            <span
+              className="iconify language-icon"
+              data-icon={node.language}
+              data-inline="false"
+            ></span>
+          </div>
+          <div
+            className="project-item-title"
+            sx={{ fontSize: 2, fontWeight: `bold` }}
+          >
+            {node.title}
+          </div>
+          <div className="project-item-service" sx={{ fontSize: 1 }}>
+            {node.service}
+          </div>
+          <div className="project-item-other" sx={{ fontSize: 0 }}>
+            {node.labels} <br />
+            <Moment date={node.date} format="DD.MM.YYYY" />
+          </div>
+        </div>
       </div>
       <Link to={node.slug} aria-label={`View detail page of ${node.title}`}>
         <img
@@ -116,29 +151,38 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
             objectFit: `cover`,
           }}
         />
-        <div
-          sx={{
-            backgroundColor: node.color,
-            height: `100%`,
-            left: 0,
-            position: `absolute`,
-            top: 0,
-            width: `100%`,
-            zIndex: -2,
-          }}
-        />
-        <div sx={{ fontSize: 4 }}>
-          <span
-            className="iconify language-icon"
-            data-icon={node.language}
-            data-inline="false"
-          ></span>
-        </div>
-        <div sx={{ fontSize: 3, fontWeight: `bold` }}>{node.title}</div>
-        <div sx={{ fontSize: 2 }}>{node.service}</div>
-        <div sx={{ fontSize: 1 }}>
-          {node.labels} <br />
-          <Moment date={node.date} format="DD.MM.YYYY" />
+        <div className="project-item-desktop-preview">
+          <div
+            sx={{
+              backgroundColor: node.color,
+              height: `100%`,
+              left: 0,
+              position: `absolute`,
+              top: 0,
+              width: `100%`,
+              zIndex: -2,
+            }}
+          />
+          <div sx={{ fontSize: 4 }}>
+            <span
+              className="iconify language-icon"
+              data-icon={node.language}
+              data-inline="false"
+            ></span>
+          </div>
+          <div
+            className="project-item-title"
+            sx={{ fontSize: 2, fontWeight: `bold` }}
+          >
+            {node.title}
+          </div>
+          <div className="project-item-service" sx={{ fontSize: 1 }}>
+            {node.service}
+          </div>
+          <div className="project-item-other" sx={{ fontSize: 0 }}>
+            {node.labels} <br />
+            <Moment date={node.date} format="DD.MM.YYYY" />
+          </div>
         </div>
       </Link>
     </div>
