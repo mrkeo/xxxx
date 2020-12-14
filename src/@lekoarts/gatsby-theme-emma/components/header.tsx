@@ -16,10 +16,16 @@ type HeaderProps = {
   }[];
 };
 
-function tryToLoadColorModeFromSessionStorage() {
+tryToLoadColorModeFromSessionStorage();
+
+function tryToLoadColorModeFromSessionStorage(arg = "empty") {
   const mode = localStorage.getItem("theme-ui-color-mode");
   if (mode !== null) {
-    document.body.setAttribute("data-theme", `${mode}`);
+    if (arg === "inverted") {
+      document.body.setAttribute("data-theme", `${mode === "dark" ? "light" : "dark"}`);
+    } else {
+      document.body.setAttribute("data-theme", `${mode}`);
+    }
   }
 }
 
@@ -28,11 +34,11 @@ const Header = ({ meta, nav }: HeaderProps) => {
   const isDark = colorMode === `dark`;
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`);
+    tryToLoadColorModeFromSessionStorage("inverted");
   };
 
-  tryToLoadColorModeFromSessionStorage();
   const navEmpty = nav.length === 0;
-  
+
   return (
     <Flex as="header" variant="layout.header">
       {!navEmpty && <Navigation nav={nav} />}
