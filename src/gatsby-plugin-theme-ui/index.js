@@ -5,7 +5,7 @@ export default merge(tailwind, {
   initialColorModeName: `light`,
   useCustomProperties: true,
   colors: {
-    primary: tailwind.colors.red[7],
+    primary: "#B20000",
     secondary: tailwind.colors.indigo[5],
     modes: {
       dark: {
