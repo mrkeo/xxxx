@@ -1,0 +1,47 @@
+---
+client: "-"
+title: "3vry"
+cover: "./tile.png"
+date: "2020-06-03"
+service: "Mobile app"
+labels: "SQLite, Android, Youtube API"
+color: "#4747B2"
+language: "vscode-icons:file-type-kotlin"
+---
+
+import GitHubButton from '../githubButton';
+import Arrow from '../arrow';
+import { Grid } from 'theme-ui'
+import Paper from '@material-ui/core/Paper';
+
+<h4>About project</h4>
+
+<br/>
+
+3vry's project targets listening to music. Hardly ever someone doesn't like music. Sometimes we are looking after new tracks that we can add to our playlists. Therefore, when meeting Kotlin language and IntelliJ IDEA IDE, I've decided to make 3vry that allows to add playlists / bands and each day, on app launch, it randomly fetches single track from randomized author / playlist and adds it to the user's songs list. Videos can be played through the app(except not embeddable ones).
+
+<br/>
+<br/>
+
+<Grid
+  gap={1}
+  columns={[ 3, null, 3 ]}
+  class="text-center center-vertically">
+  <Box><h5>System</h5></Box>
+  <Box><h5>Version</h5></Box>
+  <Box><h5>Images</h5></Box>
+  <Box><span class="iconify android-icon" data-icon="logos:android-icon" data-inline="false" style="margin-top: 9%;"></span></Box>
+  <Box><small>&gt; 7.0 (Nougat) <br/> 10.0 (Android Q)</small></Box>
+  <Box><h5><a href="https://github.com/trolit/3vry#screens" target="_blank">link</a></h5></Box>
+</Grid>
+
+<br/>
+
+<Paper elevation={3}>
+  <h5 class="p-1">app overview</h5>
+  <YouTube youTubeId="ZJ2wglKpu5M" />
+</Paper>
+
+<Arrow/>
+
+<GitHubButton url="https://github.com/trolit/3vry#readme"/>

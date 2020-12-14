@@ -1,0 +1,40 @@
+---
+client: "-"
+title: "Document and Compare"
+cover: "./tile.png"
+date: "2020-04-17"
+service: "Mobile app"
+labels: "Xamarin.Forms, Android"
+color: "#1B6C44"
+language: "vscode-icons:file-type-csharp2"
+---
+
+import GitHubButton from '../githubButton';
+import Arrow from '../arrow';
+import { Grid } from 'theme-ui'
+import Paper from '@material-ui/core/Paper';
+
+<h4>About project</h4>
+
+<br/>
+
+My first mobile app in Xamarin.Forms. The idea behind Document And Compare was to create open source tool that will allow it's users to collect evidence(images) under tags, manage them and easily generate PDF documents to compare differences between images instead of necessity to transfer them to computer and manually prepare document or image with all merged photos. An example from real life where this can be useful is for e.g. testing hair dye quality(how durable is color).
+
+<br/>
+<br/>
+
+<Grid
+  gap={1}
+  columns={[ 3, null, 3 ]}
+  class="text-center center-vertically">
+  <Box><h5>System</h5></Box>
+  <Box><h5>Version</h5></Box>
+  <Box><h5>Images</h5></Box>
+  <Box><span class="iconify android-icon" data-icon="logos:android-icon" data-inline="false" style="margin-top: 9%;"></span></Box>
+  <Box><small>&gt; 5.0 (Lollipop) <br/> 9.0 (Pie)</small></Box>
+  <Box><h5><a href="https://github.com/OS-expected/document-and-compare#screens" target="_blank">link</a></h5></Box>
+</Grid>
+
+<Arrow/>
+
+<GitHubButton url="https://github.com/OS-expected/document-and-compare#readme"/>
