@@ -163,7 +163,7 @@ const ProjectItem = ({ node, style }: ProjectItemProps) => (
               zIndex: -2,
             }}
           />
-          <div sx={{ fontSize: 4 }}>
+          <div>
             <span
               className="iconify language-icon"
               data-icon={node.language}
