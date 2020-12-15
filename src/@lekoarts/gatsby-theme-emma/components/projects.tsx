@@ -16,6 +16,7 @@ type ProjectsProps = {
     date: Date
     language: string
     labels: string
+    desc: string
   }[]
   [key: string]: any
 }
