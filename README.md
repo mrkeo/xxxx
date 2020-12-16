@@ -30,3 +30,4 @@ Since shadowing GraphQL queries results in compilation warnings(can be ommited b
 - <a href="https://github.com/MrRio/jsPDF">jsPDF</a>
 - <a href="https://github.com/sass/node-sass">node-sass</a>
 - <a href="https://iconify.design/">Iconify design</a>
+- <a href="https://github.com/KyleAMathews/typography.js/">typography.js</a>
