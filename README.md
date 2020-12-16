@@ -8,7 +8,7 @@ Made from <a href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/
 - added scss & attribute to body `data-theme` which can be used to add custom stylings for dark mode via scss
 - added projects exporting to PDF file if you want to share it with someone or add to your application(CV) :)
 - added avatar to the header component
-- added on main page constant information showing for each project(when <= 3 projects in single row)
+- added on main page constant information showing for each project(width < 770)
 - removed project item resize animation on the main page
 - changed amount of information shown on project item hover
 
