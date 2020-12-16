@@ -7,6 +7,7 @@ require("dotenv").config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
+  pathPrefix: "/trolit.github.io",
   siteMetadata: {
     siteTitle: "Pawel Idzikowski",
     siteTitleAlt: "pawel idzikowski",

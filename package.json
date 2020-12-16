@@ -13,7 +13,8 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+	"deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-emma": "^1.4.19",
@@ -32,6 +33,7 @@
     "gatsby-plugin-sitemap": "^2.5.1",
     "gatsby-plugin-typography": "^2.7.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
+    "gh-pages": "^3.1.0",
     "jspdf": "^2.2.0",
     "node-sass": "4.14.1",
     "prettier": "^2.2.1",
