@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-27b0a402d61accfec2e6.js"
+    "url": "webpack-runtime-3e310f0b47654fe76363.js"
   },
   {
     "url": "styles.161eb81eb2c1183a0532.css"
   },
   {
-    "url": "styles-755093da0c07f4b49226.js"
+    "url": "styles-31f023f48facb69035d3.js"
   },
   {
-    "url": "framework-8e528b732ab2eaadb7b7.js"
+    "url": "framework-6c3ead24af170cdcb87c.js"
   },
   {
-    "url": "app-70e94ed9debf3c92cee8.js"
+    "url": "app-47b646cd197fa4df07eb.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "6da206eaec296a74fcd5b267423ef418"
+    "revision": "4d4e03ddf91d596979480b3eddbe5ff1"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,10 +54,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "900fbabb364a13a87157cb9a94adbe33"
+    "revision": "7517e7eac4dd231b9572ec4d790d2685"
   },
   {
-    "url": "polyfill-78cdc6a84a6e659c51c0.js"
+    "url": "polyfill-30a761bdd526fe06de9d.js"
   },
   {
     "url": "manifest.json",
@@ -157,7 +157,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/trolit.github.io/app-70e94ed9debf3c92cee8.js`))) {
+  if (!resources || !(await caches.match(`/trolit.github.io/app-47b646cd197fa4df07eb.js`))) {
     return await fetch(event.request)
   }
 
