@@ -22,7 +22,7 @@ Since shadowing GraphQL queries results in compilation warnings(can be ommited b
 
 1. (optional) Copy and update path given below, according to your repo location <br/> `{DRIVE}:\{DIR1}\{REPOSITORY}\node_modules\@lekoarts\gatsby-theme-emma-core` 
 2. Use it to quickly go to the destination or jump there from clicking from dir to dir =)
-3. Click on links: gatsy-node.js, ... They will redirect you to raw files in GitHub.
+3. Copy content of these files and overwrite them in your repo: <a href="https://raw.githubusercontent.com/trolit/trolit.github.io/storage/npm/gatsby-node.js">gatsy-node.js</a>, <a href="https://raw.githubusercontent.com/trolit/trolit.github.io/storage/npm/project-query.tsx">project-query.tsx</a>, <a href="https://raw.githubusercontent.com/trolit/trolit.github.io/storage/npm/projects-query.tsx">projects-query.tsx</a>.
 4. Overwrite files created by `npm install`.
 5. `gatsby develop` project
 
