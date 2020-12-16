@@ -1,8 +1,22 @@
 ## Personal portfolio
 
-Made from <a href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emma">gatsby-theme-emma starter</a> done by LekoArts
+Made from <a href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emma">gatsby-theme-emma starter</a> done by <a href="https://github.com/LekoArts/">LekoArts</a>
 
-#### Note
+### <a href="https://trolit.github.io/">live preview</a>
+
+#### Main changes
+- added scss & attribute to body `data-theme` which can be used to add custom stylings for dark mode via scss
+- added projects exporting to PDF file if you want to share it with someone or add to your application(CV) :)
+- added avatar to the header component
+- added on main page constant information showing for each project(when <= 3 projects in single row)
+- removed project item resize animation on the main page
+- changed amount of information shown on project item hover
+
+### How to use?
+
+Clone or fork, overwrite GraphQL queries after `npm install` and adjust to personal needs 😋
+
+#### Important note
 
 Since shadowing GraphQL queries results in compilation warnings(can be ommited but produces annoying text 😄) I would suggest to overwrite query files and gatsby-node.js from your node_modules after using `npm install` command. How to do it?
 
@@ -11,3 +25,9 @@ Since shadowing GraphQL queries results in compilation warnings(can be ommited b
 3. Click on links: gatsy-node.js, ... They will redirect you to raw files in GitHub.
 4. Overwrite files created by `npm install`.
 5. `gatsby develop` project
+
+### References
+- <a href="https://github.com/mui-org/material-ui">material-ui for React</a>
+- <a href="https://github.com/MrRio/jsPDF">jsPDF</a>
+- <a href="https://github.com/sass/node-sass">node-sass</a>
+- <a href="https://iconify.design/">Iconify design</a>
