@@ -12,6 +12,7 @@ export const query = graphql`
         date
         language
         labels
+        desc
         service
         client
         title

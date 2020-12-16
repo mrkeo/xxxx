@@ -58,6 +58,7 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
       date: Date! @dateformat
       language: String!
       labels: String
+      desc: String!
       cover: File! @fileByRelativePath
       excerpt(pruneLength: Int = 160): String!
       body: String!
@@ -82,6 +83,7 @@ exports.createSchemaCustomization = ({ actions, schema }, themeOptions) => {
       date: Date! @dateformat
       language: String!
       labels: String
+      desc: String!
       cover: File! @fileByRelativePath
       excerpt(pruneLength: Int = 140): String! @mdxpassthrough(fieldName: "excerpt")
       body: String! @mdxpassthrough(fieldName: "body")
@@ -126,6 +128,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
       service: node.frontmatter.service,
       color: node.frontmatter.color,
       labels: node.frontmatter.labels,
+      desc: node.frontmatter.desc,
     }
 
     const mdxProjectId = createNodeId(`${node.id} >>> MdxProject`)
