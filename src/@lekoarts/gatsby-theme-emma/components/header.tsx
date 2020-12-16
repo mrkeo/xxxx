@@ -19,7 +19,10 @@ type HeaderProps = {
 tryToLoadColorModeFromSessionStorage();
 
 function tryToLoadColorModeFromSessionStorage(arg = "empty") {
-  const mode = localStorage.getItem("theme-ui-color-mode");
+  let mode = null;
+  if (typeof window !== 'undefined') {
+    mode = localStorage.getItem("theme-ui-color-mode");
+  }
   if (mode !== null) {
     if (arg === "inverted") {
       document.body.setAttribute("data-theme", `${mode === "dark" ? "light" : "dark"}`);
