@@ -274,4 +274,9 @@ body[data-theme='dark'] {
     .highlighted-block {
         background-color: #7C7C7C;
     }
+
+    .download-pdf-anchor:hover {
+        color: #F87171;
+        transition: ease 0.9s;
+    }
 }
