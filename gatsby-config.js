@@ -17,16 +17,9 @@ module.exports = {
     siteImage: "/banner.jpg",
   },
   plugins: [
-    {
-      resolve: "@lekoarts/gatsby-theme-emma",
-      options: {},
-    },
-    {
-      resolve: "@pauliescanlon/gatsby-mdx-embed",
-    },
-    {
-      resolve: "gatsby-plugin-sass",
-    },
+    "@lekoarts/gatsby-theme-emma",
+    "gatsby-plugin-mdx-embed",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-typography",
       options: {
