@@ -31,4 +31,4 @@ Since shadowing GraphQL queries results in compilation warnings(can be ommited b
 - <a href="https://github.com/sass/node-sass">node-sass</a>
 - <a href="https://iconify.design/">Iconify design</a>
 - <a href="https://github.com/KyleAMathews/typography.js/">typography.js</a>
-- <a href="https://www.gatsbyjs.com/plugins/@pauliescanlon/gatsby-mdx-embed/">gatsby-mdx-embed</a>
+- <a href="https://github.com/PaulieScanlon/mdx-embed/tree/main/packages/gatsby-plugin-mdx-embed">gatsby-plugin-mdx-embed</a> (package of <a href="https://github.com/PaulieScanlon/mdx-embed#readme">MDX Embed</a>)
