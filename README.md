@@ -1,4 +1,14 @@
-## Personal portfolio
+<h3 align="center"> <| desktop preview |> </h3>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/trolit/trolit.github.io/storage/images/scr1.png" alt="Portfolio - preview 1" width="90%"/>
+</p>
+
+<h3 align="center"> <| mobile preview |> </h3>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/trolit/trolit.github.io/storage/images/scr2.png" alt="Portfolio - preview 2" width="50%"/>
+</p>
 
 Made from <a href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-emma">gatsby-theme-emma starter</a> done by <a href="https://github.com/LekoArts/">LekoArts</a>
 
@@ -6,7 +16,7 @@ Made from <a href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/
 
 #### Main changes
 - added scss & attribute to body `data-theme` which can be used to add custom stylings for dark mode via scss
-- added projects exporting to PDF file if you want to share it with someone or add to your application(CV) :)
+- added projects exporting to PDF file with jsPDF that can be adjusted to personal needs
 - added avatar to the header component
 - added on main page constant information showing for each project(width < 770)
 - removed project item resize animation on the main page
